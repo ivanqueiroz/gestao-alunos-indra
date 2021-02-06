@@ -23,6 +23,6 @@ class AlunosControllerTest {
     void listar() throws Exception {
 
         this.mockMvc.perform(get("/alunos")).andDo(print()).andExpect(status().isOk())
-            .andExpect(content().string(containsString("ListaConvidados")));
+            .andExpect(content().string(containsString("Formação Java!")));
     }
 }
